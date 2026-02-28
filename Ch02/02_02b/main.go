@@ -6,9 +6,15 @@ import (
 
 func main() {
 
-	// str1 := "The quick red fox"
-	// str2 := "jumped over"
-	// str3 := "the lazy brown dog."
+	str1 := "The quick red fox"
+	str2 := "jumped over"
+	str3 := "the lazy brown dog."
 
-	fmt.Println("Hello from Go!")
+	aNumber := 12
+
+	fmt.Println(str1, str2, str3)
+	stringLength, err := fmt.Println("The value is", aNumber)
+	if err == nil {
+		fmt.Println("The string length is", stringLength)
+	}
 }
